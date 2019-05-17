@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        section {
+            width: 80%;
+            height:500px;
+            margin: 50px auto;
+            background-color: pink;
+            display: flex; 
+            min-width: 500px;
+           /*column纵向  row横向默认   row-reverse 反过来排列  */
+            /* flex-direction:row-reverse;   */
+            
+        }
+        div {
+            height: 100%;
+        }
+        section div:nth-child(1){
+            background-color:red;
+            flex: 1;
+        }
+        section div:nth-child(2) {
+            background-color: green;
+            /* flex:2; */
+            /* 可以是固定宽度 */
+             width: 500px;
+             margin:0 5px;
+            /* margin: 5px 0; */
+        }
+        section div:last-child{
+            background-color: yellow;
+            flex:1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</body>
+
+</html>
