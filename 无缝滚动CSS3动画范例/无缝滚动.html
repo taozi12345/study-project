@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {margin: 0;padding: 0;}
+        ul {
+            list-style: none;
+            width: 200%;
+            animation: roll 5s linear infinite; 
+            /*引用动画*/
+              /*linear 匀速动画*/
+        }
+       div li {float: left;}
+        div {
+            width: 882px;
+            height: 86px;
+            border: 1px solid pink;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+         /*定义动画*/
+        @keyframes roll {
+            0% {
+                transform: translate3d(0,0,0);
+            }
+            100% {
+                transform: translate3d(-882px,0,0);
+            }
+        }
+         /*鼠标经过nav 里面的ul 就暂停动画*/
+        div:hover ul {
+            animation-play-state: paused;
+            /*鼠标经过暂停动画*/
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><img src="img/nav1.jpg" alt=""></li>
+            <li><img src="img/nav2.jpg" alt=""></li>
+            <li><img src="img/nav3.jpg" alt=""></li>
+            <li><img src="img/nav4.jpg" alt=""></li>
+            <li><img src="img/nav5.jpg" alt=""></li>
+            <li><img src="img/nav6.jpg" alt=""></li>
+            <li><img src="img/nav7.jpg" alt=""></li>
+            <li><img src="img/nav1.jpg" alt=""></li>
+            <li><img src="img/nav2.jpg" alt=""></li>
+            <li><img src="img/nav3.jpg" alt=""></li>
+            <li><img src="img/nav4.jpg" alt=""></li>
+            <li><img src="img/nav5.jpg" alt=""></li>
+            <li><img src="img/nav6.jpg" alt=""></li>
+            <li><img src="img/nav7.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
