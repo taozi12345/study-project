@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		 .container{
+		 	width: 900px;
+		 	margin: 0 auto;
+		 }
+		 .purple{
+		 	/*让颜色撑满整个盒子*/
+		 	width: 100%;
+		 	float: left;
+		 	background-color: purple;
+		 	/*去掉溢出的部分*/
+		 	overflow: hidden;
+
+		 }
+		  .pink{
+		 	/*让颜色撑满整个盒子*/
+		 	width: 100%;
+		 	background-color: pink;
+		    float: left;   /* 触发BFC*/
+		 	position: relative;
+		 	right: 300px;
+
+		 }
+		  .yellow{
+		 	/*让颜色撑满整个盒子*/
+		 	width: 100%;
+		 	background-color: yellow;
+		    float: left;  /* 触发BFC*/
+		 	position: relative;
+		 	right: 300px;
+
+		 }
+		 .red{
+		  	width:300px;
+		 	/*background-color: red; */
+		     float: left;
+		 	 position: relative;
+		    left: 600px;
+		 }
+		  .green{
+		 	width:300px;
+		 	/*background-color: green; */
+		 	float: left;
+		     position: relative;
+		 	 left: 600px;
+		 }
+		  .blue{
+		 	width:300px;
+		 	/*background-color: blue; */
+		 	float: left;
+		    position: relative;
+		    left: 600px;
+		 }
+
+	</style>
+</head>
+<body>
+	
+	<!-- 版心 -->
+	<div class="container">
+			
+			<!-- 第一步 -->
+
+			<div class="purple">
+				<div class="pink">
+					<div class="yellow">
+						<div class="red">红色内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦</div>
+						<div class="green">绿色内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦</div>
+						<div class="blue">蓝色内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦内容激动啥跟哦</div>
+					</div>
+				</div>
+			</div>
+			
+	</div>
+</body>
+</html>
+<!-- 
+ 真等高:
+		
+ -->
