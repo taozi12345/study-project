@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+          width: 80px;
+          height: 80px;
+          border: 1px solid yellow;
+          position: relative;
+        }
+  
+    
+        .arrow-l,  .arrow-r {
+            width: 0;
+            height: 0;
+            border-right: 40px solid yellow;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 40px solid transparent;
+            
+        }
+        .arrow-r {
+            position: absolute;
+            top: 0;
+            right: -1px;
+            /* 错 1 橡树 */
+            border-right: 40px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="arrow-l"></div>
+        <div class="arrow-r"></div>
+    </div>
+</body>
+</html>
